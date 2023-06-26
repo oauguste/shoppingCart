@@ -1,5 +1,11 @@
+import NavHeader from "./NavHeader";
+
 const MainPage = () => {
-  return <div>MainPage</div>;
+  return (
+    <div>
+      <NavHeader />
+    </div>
+  );
 };
 
 export default MainPage;
