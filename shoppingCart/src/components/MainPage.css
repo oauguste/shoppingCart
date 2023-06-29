@@ -1,0 +1,41 @@
+.mainContent {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -80%);
+}
+
+.button {
+  border: 1px solid black;
+  font-size: medium;
+  background: none;
+  text-align: center;
+}
+.button a {
+  text-decoration: none;
+  color: black;
+}
+.button a:visited {
+  color: black;
+}
+.button a:hover {
+  color: black;
+}

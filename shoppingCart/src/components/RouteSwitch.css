@@ -1,0 +1,9 @@
+.navHeader {
+  position: fixed; /* Makes it stay in the same position while scrolling */
+  top: 0; /* Aligns it to the top */
+  width: 100%; /* Makes it take the full width */
+  z-index: 1; /* Keeps it above the content */
+}
+.routeContainer {
+  padding-top: 60px; /* Replace 60px with your NavHeader's height */
+}
