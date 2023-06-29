@@ -10,3 +10,13 @@ button {
 button:hover {
   color: lightcyan;
 }
+.navButtons a {
+  text-decoration: none;
+  color: white;
+}
+.navButtons a:visited {
+  color: white;
+}
+.navButtons a:hover {
+  color: white;
+}

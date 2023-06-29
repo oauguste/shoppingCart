@@ -1,0 +1,28 @@
+.productContainer {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  overflow: none;
+  flex-wrap: wrap;
+}
+.productSection {
+  display: flex;
+  max-width: min-content;
+  margin-left: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productImage {
+  max-width: 100px;
+  aspect-ratio: 3/4;
+}
+.imageProductText {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.imageProductPrice {
+  text-align: center;
+
+  color: red;
+}
