@@ -1,4 +1,5 @@
 import backgroundImage from "../assets/shopping-2616824_1920.jpg";
+
 import "./MainPage.css";
 import { Link } from "react-router-dom";
 const MainPage = () => {

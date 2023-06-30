@@ -1,7 +1,8 @@
 import "./Product.css";
 import { useParams } from "react-router-dom";
-
+import { useDispatch } from "react-redux";
 import PropTypes from "prop-types";
+import { addToCart } from "../features/counter/cartProducts";
 
 const Product = () => {
   const allProduct = [
@@ -63,6 +64,8 @@ const Product = () => {
       (item) => item.category === categoryToUse
     );
   }
+  const dispatch = useDispatch();
+
   return (
     <div className="productContainer">
       {product.map((item, index) => (
@@ -76,7 +79,12 @@ const Product = () => {
           <h4 className="imageProductPrice">
             ${item.price.toFixed(2)}
           </h4>
-          <button className="addtoCart">Add to Cart</button>
+          <button
+            className="addtoCart"
+            onClick={() => dispatch(addToCart(item))}
+          >
+            Add to Cart
+          </button>
         </div>
       ))}
     </div>

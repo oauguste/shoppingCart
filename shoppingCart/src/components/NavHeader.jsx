@@ -1,7 +1,13 @@
 import NavButtons from "./NavButtons";
 import "./NavHeader.css";
-
+import { useSelector } from "react-redux";
+import { selectAllProducts } from "../features/counter/cartProducts";
 const NavHeader = () => {
+  const products = useSelector(selectAllProducts);
+  const totalQuantity = products.reduce(
+    (total, product) => total + product.quantity,
+    0
+  );
   return (
     <div className="navheader">
       <ul className="list">
@@ -21,7 +27,7 @@ const NavHeader = () => {
             <li>
               <NavButtons name="Cart" />
             </li>
-            <div className="box">5</div>
+            <div className="box">{totalQuantity}</div>
           </div>
         </div>
       </ul>
