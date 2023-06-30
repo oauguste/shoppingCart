@@ -1,5 +1,11 @@
+import CartItems from "../features/counter/CartItems";
+
 const ShoppingCart = () => {
-  return <div>ShoppingCart</div>;
+  return (
+    <div>
+      <CartItems />
+    </div>
+  );
 };
 
 export default ShoppingCart;
